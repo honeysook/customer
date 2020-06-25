@@ -83,3 +83,28 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+git clone  https://github.com/honeysook/customer.git
+cd customer
+php artisan migrate:fresh
+php artisan db:seed
+php artisan serve
+
+You will see the result. 
+Go to browser 
+Result Style1. jQuery Ajax :
+http://localhst:8000/customerlist.html
+
+Result Style2. Laravel Blade template
+http://localhost:8000/customers
+
+
+[Test coverage report]
+Test focused on Customer module and CustomerController only.
+customer/tests/coverage/Customer.php.html
+customer/tests/coverage/Http/Controllers/CustomerController.php.html
+
+CustomerModel code coverage 100%
+
+CustomerController code coverage 100%
